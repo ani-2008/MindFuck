@@ -1,7 +1,7 @@
 # MindFuck
 Mindfuck is a minimalist, esoteric programming language that extends Brainfuck with additional functionalities like arithmetic operations and comparisons. This interpreter processes .mf files, executing their commands using a virtual memory tape.
 
-#Features
+**Features**
 
 Basic arithmetic (+, -, *, /)
 Memory navigation (<, >)
@@ -35,15 +35,16 @@ Start loop (execute of current memory value not equal to 0)('(')
 End loop(')')
 
 
-#Using 
+**Using**
 After cloning repository
 
 '''git clone https://github.com/ani-2008/mindfuck-interpreter.git
+
 cd mindfuck-interpreter'''
 
 To run a Mindfuck script (example.mf):
 '''python mindfuck.py example.mf'''
 
-#Contributions
+**Contributions**
 Pull requests are welcome! Feel free to improve this interpreter or expand Mindfuck’s capabilities.
 Soon will build a compiler for this
