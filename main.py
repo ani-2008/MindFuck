@@ -1,10 +1,17 @@
 import sys
+import os
 def read_file():
+    data = b""
     if len(sys.argv) == 2 and sys.argv[1].endswith(".mf"):
-        with open(sys.argv[1]) as file:
-            data = file.read().replace(" ","").replace("\n","")
-        
-        return data
+        file = os.open(sys.argv[1],os.O_RDONLY)
+        while True:
+            sub = os.read(file,1024)
+            if not sub:
+                break
+            data += sub
+    os.close(file)
+    data = data.decode()
+    return data
 
 code_pointer = 0
 memory_stack = [0] * 30000
@@ -23,7 +30,7 @@ def code_exec(memory_stack,code_pointer,code,memory_pointer):
                 memory_stack[memory_pointer] -= 1
 
         elif code[code_pointer] == "*":
-            result = memory_stack[memory_pointer-1] * memory_stack[memory_pointer]
+            result = memory_stack[memory_pointer] * memory_stack[memory_pointer]
             if result <= 255:
                 memory_stack[memory_pointer] = result
 
