@@ -12,7 +12,7 @@ Loop handling ((, ))
 + = Increment memory value
 - = Decrement memory value
 * = multiply previous memory value and current memory value
-/ = Divide previouse memory value by current memory value
+/ = Divide previous memory value by current memory value
 < = move memory pointer left
 > = move memory pointer right
 $ = Take user input(Single character)
@@ -23,6 +23,7 @@ G = Compare previous memory value with current (Greater than)
 ) = End loop
 #Using 
 After cloning repository
+
 '''git clone https://github.com/ani-2008/mindfuck-interpreter.git
 cd mindfuck-interpreter'''
 
