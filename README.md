@@ -31,3 +31,4 @@ To run a Mindfuck script (example.mf):
 
 #Contributions
 Pull requests are welcome! Feel free to improve this interpreter or expand Mindfuck’s capabilities.
+Soon will build a compiler for this
