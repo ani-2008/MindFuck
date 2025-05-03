@@ -10,40 +10,44 @@ Output printing (:)
 Comparisons (L, G)
 Loop handling ((, ))
 
-+Increment memory value(+)
+>Increment memory value(+)
 
-+Decrement memory value(-)
+>Decrement memory value(-)
 
-+multiply previous memory value and current memory value(*)
+>multiply previous memory value and current memory value(*)
 
-+Divide previous memory value by current memory value(/)
+>Divide previous memory value by current memory value(/)
 
-+move memory pointer left(<)
+>move memory pointer left(<)
 
-+move memory pointer right(>)
+>move memory pointer right(>)
 
-+Take user input(Single character)($)
+>Take user input(Single character)($)
 
-+Print the ASCII value of the current memory value(:)
+>Print the ASCII value of the current memory value(:)
 
-+Compare previous memory value with current (Less than)(L)
+>Compare previous memory value with current (Less than)(L)
 
-+Compare previous memory value with current (Greater than)(G)
+>Compare previous memory value with current (Greater than)(G)
 
-+Start loop (execute if current memory value is not equal to 0)('(')
+>Start loop (execute if current memory value is not equal to 0)('(')
 
-+End loop(')')
+>End loop(')')
 
 
 **Using**
 After cloning the repository
 
->'''git clone https://github.com/ani-2008/mindfuck-interpreter.git
+'''
+git clone https://github.com/ani-2008/mindfuck-interpreter.git
 
->cd mindfuck-interpreter'''
+cd mindfuck-interpreter
+'''
 
 To run a Mindfuck script (example.mf):
->'''python mindfuck.py example.mf'''
+'''
+python mindfuck.py example.mf
+'''
 
 **Contributions**
 Pull requests are welcome! Feel free to improve this interpreter or expand Mindfuck’s capabilities.
