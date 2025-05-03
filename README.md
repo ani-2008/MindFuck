@@ -38,21 +38,21 @@ Loop handling ((, ))
 **Using**
 After cloning the repository
 
-'''
+```
 
 git clone https://github.com/ani-2008/mindfuck-interpreter.git
 
 cd mindfuck-interpreter
 
-'''
+```
 
 To run a Mindfuck script (example.mf):
 
-'''
+```
 
 python mindfuck.py example.mf
 
-'''
+```
 
 **Contributions**
 Pull requests are welcome! Feel free to improve this interpreter or expand Mindfuck’s capabilities.
