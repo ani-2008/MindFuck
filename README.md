@@ -40,9 +40,9 @@ After cloning the repository
 
 ```
 
-git clone https://github.com/ani-2008/mindfuck-interpreter.git
+git clone https://github.com/ani-2008/MindFuck.git
 
-cd mindfuck-interpreter
+cd MindFuck
 
 ```
 
