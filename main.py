@@ -23,7 +23,7 @@ def code_exec(memory_stack,code_pointer,code,memory_pointer):
                 memory_stack[memory_pointer] -= 1
 
         elif code[code_pointer] == "*":
-            result = memory_stack[memory_pointer] * memory_stack[memory_pointer]
+            result = memory_stack[memory_pointer-1] * memory_stack[memory_pointer]
             if result <= 255:
                 memory_stack[memory_pointer] = result
 
@@ -47,7 +47,7 @@ def code_exec(memory_stack,code_pointer,code,memory_pointer):
                 memory_stack[memory_pointer] = get_in
 
         elif code[code_pointer] == ":":
-            print(memory_stack[memory_pointer])
+            print(chr(memory_stack[memory_pointer]))
         
         elif code[code_pointer] == "L":
             if memory_pointer != 0:
