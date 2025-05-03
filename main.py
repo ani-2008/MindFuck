@@ -3,15 +3,9 @@ import os
 def read_file():
     data = b""
     if len(sys.argv) == 2 and sys.argv[1].endswith(".mf"):
-        file = os.open(sys.argv[1],os.O_RDONLY)
-        while True:
-            sub = os.read(file,1024)
-            if not sub:
-                break
-            data += sub
-    os.close(file)
-    data = data.decode()
-    return data
+        file = open(sys.argv[1])
+        data = file.read().replace("\n","").replace(" ","")
+        return data
 
 code_pointer = 0
 memory_stack = [0] * 30000
