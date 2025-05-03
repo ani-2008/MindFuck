@@ -4,10 +4,15 @@ Mindfuck is a minimalist, esoteric programming language that extends Brainfuck w
 **Features**
 
 Basic arithmetic (+, -, *, /)
+
 Memory navigation (<, >)
+
 User input ($)
+
 Output printing (:)
+
 Comparisons (L, G)
+
 Loop handling ((, ))
 
 >Increment memory value(+)
