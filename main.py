@@ -48,7 +48,7 @@ def code_exec(memory_stack,code_pointer,code,memory_pointer):
             memory_stack[memory_pointer] = get_in
 
         elif code[code_pointer] == ":":
-            print(chr(memory_stack[memory_pointer]))
+            print(chr(int(memory_stack[memory_pointer])))
         
         elif code[code_pointer] == "L":
             if memory_pointer != 0:
