@@ -39,11 +39,11 @@ def code_exec(memory_stack,code_pointer,code,memory_pointer):
                 memory_pointer -= 1
             
         elif code[code_pointer] == ">":
-            if memory_pointer < 30000:
+            if memory_pointer <= 29999:
                 memory_pointer += 1
 
         elif code[code_pointer] == "$":
-            get_in = input()
+            get_in = sys.stdin.read(1)
             if len(get_in) == 1 and ord(get_in) <= 255:
                 memory_stack[memory_pointer] = get_in
 
