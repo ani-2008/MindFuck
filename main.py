@@ -44,8 +44,8 @@ def code_exec(memory_stack,code_pointer,code,memory_pointer):
 
         elif code[code_pointer] == "$":
             get_in = sys.stdin.read(1)
-            if len(get_in) == 1 and ord(get_in) <= 255:
-                memory_stack[memory_pointer] = get_in
+            
+            memory_stack[memory_pointer] = get_in
 
         elif code[code_pointer] == ":":
             print(chr(memory_stack[memory_pointer]))
